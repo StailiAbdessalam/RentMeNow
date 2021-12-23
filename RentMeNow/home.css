@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heder {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  gap: 80px;
+  z-index: 1;
+}
+.Logo-car {
+  width: 60px;
+  height: 60px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+#beurger {
+  font-size: 40px;
+  display: none;
+}
+.list-nav-bar {
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-nav-bar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 30px;
+  font-size: 16px;
+}
+.list-nav-bar li a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.list-nav-bar li input {
+  border: none;
+
+  width: 90px;
+  padding: 6px 0px;
+  border-radius: 3px;
+  margin: 30px;
+  color: rgb(255, 255, 255);
+
+  font-size: 16px;
+  background-color: rgb(0, 0, 0);
+}
+.list-nav-bar li input:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.space {
+  width: 90px;
+}
+/* media query for nav bare de sitte web  */
+@media (max-width: 711px) {
+  .list-nav-bar {
+    display: none;
+  }
+  .space {
+    display: none;
+  }
+}
+
+/* d'abord en fait le css de la partie gauche de mon sitte  */
+.hom {
+  display: flex;
+
+  border: none;
+}
+.Noire {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.Title {
+  font-size: 40px;
+  padding: 35% 0 0 31%;
+}
+.paragraphe {
+  padding: 5px 0 0 31%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.button {
+  padding: 16px 0 0 31%;
+}
+.button button {
+  width: 200px;
+  height: 29px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+}
+.button :hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.575);
+  border: 1px solid white;
+  cursor: pointer;
+}
+@media (max-width: 716px) {
+  .Title {
+    font-size: 30px;
+    padding: 30% 0 0 10%;
+  }
+  .paragraphe {
+    padding: 10px 0 0 10%;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .button {
+    padding: 16px 0 0 10%;
+  }
+  .button button {
+    width: 200px;
+    height: 29px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 500px) {
+  .Title {
+    font-size: 30px;
+    padding: 50% 0 0 10%;
+  }
+  .button button {
+    width: 150px;
+    height: 29px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+  }
+}
+.BYADE {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(2, 2, 2);
+}
+.BYADE video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.footre {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(27, 31, 28);
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo-footre {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.div-reseau-social {
+  display: flex;
+  align-items: center;
+}
+.reseau-sosial {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-size: 30px;
+}
+.reseau-sosial :hover {
+  color: tomato;
+}
+.gauch {
+  display: flex;
+  align-items: center;
+}
+.gauch button {
+  margin-bottom: 2%;
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+}
+.gauch button a {
+  color: black;
+}
+.gauch i {
+  color: white;
+  font-size: 35px;
+}
+
+.qualiter {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+}
+.rect {
+  height: 300px;
+  border: 1px solid black;
+  margin: 30px 0px;
+  border-radius: 4px;
+  color: rebeccapurple;
+  background-color: white;
+  width: 250px;
+}
+.rect img {
+  width: 100px;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.rect p {
+  margin: 30px 16px;
+  color: black;
+}
+@media (max-width: 415px) {
+  .rect {
+    height: 200px;
+    width: 150px;
+  }
+  .rect {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 711px) {
+  #beurger {
+    display: flex;
+    align-items: center;
+  }
+}
