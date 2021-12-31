@@ -1,29 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="Galerie.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Galerie.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="heder">
-        <img src="./image/LOGO.png" alt="" class="Logo-car" />
-        <i id="beurger" class="bx bx-menu"></i>
-        <ul class="list-nav-bar">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="">Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><div class="space"></div></li>
-          <li><input type="button" name="" value="Reservier" id="" /></li>
-        </ul>
+      <img src="./image/LOGO.png" alt="" class="Logo-car" />
+      <div class="openMenu"> <i id="beurger" class="bx bx-menu"></i></div>
+      <ul class="list-nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class="space"></div></li>
+        <li>
+          <a class="sans" href="Services.html"
+            ><input type="button" name="" value="Reservier" id=""
+          /></a>
+        </li>
+        <div class="closeMenu"> <i id="beurger" class="bx bx-menu"></i></div>
+      </ul>
+    </div>
+    <input type="radio" name="photos" id="check1" checked />
+    <input type="radio" name="photos" id="check2" checked />
+    <input type="radio" name="photos" id="check3" checked />
+    <input type="radio" name="photos" id="check4" checked />
+    <input type="radio" name="photos" id="check5" checked />
+    <input type="radio" name="photos" id="check6" checked />
+    <input type="radio" name="photos" id="check7" checked />
+    <input type="radio" name="photos" id="check8" checked />
+    <div class="container">
+      <h1>OUR PHOTO GALLERY</h1>
+      <div class="tou">
+      <div class="top-content">
+        <h3>Gallery</h3>
+        <label for="check1">All </label>
+        <label for="check2">Moto</label>
+        <label for="check3">camion</label>
+        <label for="check4">utilitaire</label>
+        <label for="check5">Engin</label>
+        <label for="check6">compact</label>
+        <label for="check7">sedan</label>
+        <label for="check8">citadin</label>
       </div>
-</body>
+      <div class="photo-gallery">
+        <div class="pic place">
+          <img src="./image/motos/motos_01-removebg-preview.png" alt="" />
+        </div>
+        <div class="pic camio">
+          <img src="./image/camion/camion_01.png" alt="">
+        </div>
+        <div class="pic utilitaire">
+          <img src="./image/utilitaire/utilitaire_01.png" alt="">
+        </div>
+        <div class="pic engin_de_chantier">
+          <img src="./image/engin de chantier/engin de chantier_01.jpg" alt="">
+        </div>
+
+        <div class="pic place">
+          <img src="./image/motos/motos_02-removebg-preview.png" alt="" />
+        </div>
+        <div class="pic camio">
+          <img src="./image/camion/camion_02.png" alt="">
+        </div>
+        <div class="pic utilitaire">
+          <img src="./image/utilitaire/utilitaire_02.png" alt="">
+        </div>
+        <div class="pic engin_de_chantier">
+          <img src="./image/engin de chantier/engin de chantier_02.png" alt="">
+        </div>
+
+        <div class="pic place">
+          <img src="./image/motos/motos_03-removebg-preview.png" alt="" />
+        </div>
+        <div class="pic camio">
+          <img src="./image/camion/camion_03.png" alt="">
+        </div>
+        <div class="pic utilitaire">
+          <img src="./image/utilitaire/utilitaire_03.png" alt="">
+        </div>
+        <div class="pic engin_de_chantier">
+          <img src="./image/engin de chantier/engin de chantier_03.png" alt="">
+        </div>
+
+        <div class="pic place">
+          <img src="./image/motos/motos_04-removebg-preview.png" alt="" />
+        </div>
+        <div class="pic camio">
+          <img src="./image/camion/camio_04.png" alt="">
+        </div>
+        <div class="pic utilitaire">
+          <img src="./image/utilitaire/utilitaire_04.png" alt="">
+        </div>
+        <div class="pic engin_de_chantier">
+          <img src="./image/engin de chantier/engin de chantier_04.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="footre">
+      <div class="logo-footre">
+        <img src="./image/LOGO.png" alt="" class="Logo-car" />
+        <p class="charika">RentMeNow</p>
+      </div>
+      <div class="div-reseau-social">
+      <ul class="reseau-sosial">
+        <li><i class='bx bxl-facebook-square'></i></li>
+        <li><i class='bx bxl-whatsapp-square'></i></i></li>
+        <li><i class='bx bxl-linkedin-square'></i></li>
+        <li><i class='bx bxl-instagram'></i></li>
+        <li><i class='bx bxl-twitter'></i></li>
+      </ul>
+    </div>
+    <div class="gauch">
+      <i class='bx bx-mobile'></i>
+      <button  ><a href="tel:+212 89.08.99.03">+212 89.08.99.03</a></button>
+      
+    </div>
+  </div>
+  </body>
+  <script src="./index.js"></script>
 </html>

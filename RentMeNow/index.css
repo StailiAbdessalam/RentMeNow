@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .heder {
@@ -9,7 +10,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(204, 202, 209);
   color: rgb(0, 0, 0);
   gap: 80px;
   z-index: 1;
@@ -20,9 +21,17 @@
   padding-top: 5px;
   padding-left: 10px;
 }
+.openMenu{
+  display: flex;
+  align-items: center;
+}
+.closeMenu{
+  display: none;
+}
 #beurger {
   font-size: 40px;
   display: none;
+
 }
 .list-nav-bar {
   height: 100%;
@@ -40,6 +49,9 @@
 }
 .list-nav-bar li a:hover {
   border-bottom: 2px solid rgb(0, 0, 0);
+}
+.list-nav-bar li .sans:hover {
+  border-bottom: 2px none rgb(0, 0, 0);
 }
 .list-nav-bar li input {
   border: none;
@@ -64,11 +76,33 @@
 }
 /* media query for nav bare de sitte web  */
 @media (max-width: 711px) {
-  .list-nav-bar {
+ 
+  .list-nav-bar{
+    height: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    gap: 20px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    padding-top: 20px;
+    border: 1px black solid;
+    border-radius: 4px;
     display: none;
   }
   .space {
     display: none;
+  }
+  .closeMenu{
+    display: block;
+   position: absolute;
+   top: 10px;
+    color: black;
+    right: 10px;
   }
 }
 
@@ -227,6 +261,7 @@
   width: 100px;
   margin-left: 30%;
   margin-top: 20px;
+  
 }
 .rect p {
   margin: 30px 16px;
@@ -234,16 +269,68 @@
 }
 @media (max-width: 415px) {
   .rect {
-    height: 200px;
+    height: 300px;
     width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rect img {
+    margin-left: 18%;
+
+    
+    
   }
   .rect {
     padding-bottom: 10px;
+  }
+  .BYADE{
+    height: 300px;
+
+  }
+  .BYADE video{
+    margin-top: 50px;
+    size: 43px;
+  }
+  .Noire{
+    height: 300px;
   }
 }
 @media (max-width: 711px) {
   #beurger {
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
+}
+.haha{
+  background-color: black;
+  width: 250px;
+  height: 400px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+.haha ul{
+  list-style-type: none;*
+   
+}
+.haha li {
+  margin-top: 20px;
+}
+.haha ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.haha input{
+  font-size: 20px; 
 }
