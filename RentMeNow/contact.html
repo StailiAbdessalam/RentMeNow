@@ -30,19 +30,19 @@
         <div class="form">
           <div class="option"><u>Contact Me</u>
           </div>
-        <form action="formaa">
+        <form>
           <div class="name">
-            <input type="name" placeholder="Name"/>
-            <input type="name" placeholder="Surname"/>
+            <input id="ha" placeholder="Name" />
+            <input id="ho" type="text" placeholder="Surname"/>
           </div>
           <div class="email">
-            <input type="email" placeholder="Email" />
+            <input id="mail" type="email" placeholder="Email" />
           </div>
           <div class="message">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Entrer your message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Entre your message"></textarea>
             <div class="but">
-            <button id="bb">Send</button>
-            <button id="tt">rent Car</button>
+            <a id="bb" onclick="sendMessage()">Send</a>
+            <a href="Services.html" id="tt">rent Car</a>
             </div>
           </div>
         </form>
@@ -69,5 +69,6 @@
       </div>
     </div>
     <script src="./index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

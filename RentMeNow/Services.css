@@ -73,6 +73,10 @@ h3::before {
   height: 100px;
 
 }
+.type-car img:hover{
+  
+  
+}
 
 #choix{
   width: 300px;
@@ -186,8 +190,9 @@ display: block;
 
 
 
-
-
+.amine{
+  border: 2px solid rgb(255, 255, 255);
+}
 
 
 

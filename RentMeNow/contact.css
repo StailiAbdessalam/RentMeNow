@@ -94,9 +94,14 @@
   border-radius: 5px;
 }
 #bb {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
-  border: none;
+  border-radius: 3px;
 }
 #bb:hover {
   background-color: white;
@@ -104,9 +109,14 @@
   cursor: pointer;
 }
 #tt {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
-  border: none;
+  border-radius: 3px;
   cursor: pointer;
 }
 #tt:hover {
@@ -140,3 +150,4 @@
     width: 85%;
   }
 }
+
