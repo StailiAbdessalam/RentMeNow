@@ -269,8 +269,8 @@
 }
 @media (max-width: 415px) {
   .rect {
-    height: 300px;
-    width: 150px;
+    height: 234px;
+    width: 173px;
     display: flex;
     flex-direction: column;
     justify-content: center;
