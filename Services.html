@@ -48,19 +48,19 @@
 <div id="borde">
 <div class="phra_carburant">
   <h3>carburant  </h3>
-  <select name="carburant" id="choix">
-    <option id="essence" value=" essence"> Essence</option>
-    <option id="diesel" value=" diesel"> diesel</option>
-    <option id="electrique" value=" electrique"> electrique</option>
-    <option id="hybride" value=" hybride"> hybride</option>
+  <select name="carburant" id="choix" >
+    <option id="essence" value="essence" > Essence</option>
+    <option id="diesel" value="diesel" > diesel</option>
+    <option id="electrique" value="electrique"> electrique</option>
+    <option id="hybride" value="hybride" > hybride</option>
   </select>
 
   </div>
   <div class="phra_carburant">
     <h3> boite à vitesse </h3>
     <select name="boite à vitesse" id="choix">
-      <option  >  boite vitesse </option>
-      <option  >  manuller </option>
+      <option  value="boite vitesse" id="au" >  automatique </option>
+      <option  value="manuller" id="manu">  manuller </option>
     </select>
 
 
@@ -68,10 +68,11 @@
 
   <div class="phra_carburant">
     <h3> durée de réservation </h3>
-    <input type="number" id="choix">
+    <input class="choi" type="number" min="0" id="choix">
   </div>
   <div class="vdvd">
-    <button>Reservier </button>
+    <button id="brek" >Reservier </button>
+    
     <video src="./vidiou/back-video.mp4" autoplay loop muted></video>
   </div>
 </div>
@@ -97,5 +98,6 @@
   </div>
 </div>
 <script src="./index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

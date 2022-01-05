@@ -25,6 +25,10 @@ let sendMessage = (e) => {
   document.querySelector("#ho").value = "";
   document.querySelector("#message").value = "";
 };
+let prix ;
+let resultaPrix;
+let carburant = document.querySelector("#choix");
+let tyPrix;
 function mag(a) {
   let abdo = document.querySelectorAll(".amine");
   abdo.forEach((e) => {
@@ -33,62 +37,113 @@ function mag(a) {
   a.classList.toggle("amine");
 
   let typee = a.alt;
-  let prix;
   let hybride = document.getElementById("hybride");
   let electrique = document.getElementById("electrique");
   let diesel = document.getElementById("diesel");
   let essence = document.getElementById("essence");
+  let au = document.getElementById("au");
+  let ma = document.getElementById("manu");
   switch (typee) {
     case "1":
-      prix = 250;
+      tyPrix = 250 * 1.19;
       essence.innerHTML = "essence";
       hybride.innerHTML = "";
       diesel.innerHTML = "";
       electrique.innerHTML = "";
+      au.innerHTML = "automatique";
+      ma.innerHTML = "";
       break;
     case "2":
-      prix = 12;
+      tyPrix = 12;
       essence.innerHTML = "essence";
       hybride.innerHTML = "hybride";
       diesel.innerHTML = "diesel";
       electrique.innerHTML = "electrique";
+      au.innerHTML = " ";
+      ma.innerHTML = "manuel";
+
       break;
     case "3":
-      prix = 10;
+      tyPrix = 10;
       essence.innerHTML = "essence";
       hybride.innerHTML = "";
       diesel.innerHTML = "";
       electrique.innerHTML = "electrique";
+      au.innerHTML = "";
+      ma.innerHTML = "manuel";
       break;
     case "4":
-      prix = 900;
+      tyPrix = 900;
       essence.innerHTML = "essence";
       hybride.innerHTML = "";
       diesel.innerHTML = "diesel";
       electrique.innerHTML = "";
+      au.innerHTML = "";
+      ma.innerHTML = "manuel";
       break;
     case "5":
-      prix = 16;
+      tyPrix = 16;
       essence.innerHTML = "";
       hybride.innerHTML = "";
       diesel.innerHTML = "diesel";
       electrique.innerHTML = "";
+      au.innerHTML = "";
+      ma.innerHTML = "manuel";
       break;
     case "6":
-      prix = 14;
+      tyPrix = 14;
       essence.innerHTML = "essence";
       hybride.innerHTML = "hybride";
       diesel.innerHTML = "diesel";
       electrique.innerHTML = "";
+      au.innerHTML = " ";
+      ma.innerHTML = "manuel";
       break;
     case "7":
-      prix = 20;
+      tyPrix = 20 * 1.19;
       essence.innerHTML = "essence";
       hybride.innerHTML = "hybride";
       diesel.innerHTML = "diesel";
       electrique.innerHTML = "";
+      au.innerHTML = " automatique";
+      ma.innerHTML = "";
       break;
     default:
       break;
   }
 }
+carburant.addEventListener("change", () => {
+  console.log(carburant.value);
+  switch (carburant.value) {
+    case "essence":
+      prix = 1.14;
+      break;
+    case "hybride":
+      prix = 1.09;
+      break;
+    case "diesel":
+      prix = 1.21;
+      break;
+    case "electrique":
+      prix = 1.05;
+      break;
+    default:
+      break;
+  }
+});
+let brek = document.getElementById("brek");
+brek.addEventListener("click", () => {
+    let jour = document.querySelector(".choi").value;
+
+  resultaPrix = tyPrix * prix * jour;
+  alert(resultaPrix);
+ 
+   
+    
+
+
+
+
+
+
+});
