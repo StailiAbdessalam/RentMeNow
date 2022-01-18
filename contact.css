@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backback 8s infinite;
- 
+  animation: backwards 8s infinite;
+ background-size: cover;
 }
 @keyframes backback{
 33%{

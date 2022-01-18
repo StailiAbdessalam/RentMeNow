@@ -58,7 +58,7 @@ h3::before {
   height: 120px;
   flex-wrap: nowrap;
   display: flex;
-  gap: 30px;
+  gap: 140px;
   overflow-x: scroll;
  
 
@@ -91,7 +91,7 @@ h3::before {
   height: 230px;
   float: right;
   position: absolute;
-  top: 49%;
+  top:  31%;
   left: 50%;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
