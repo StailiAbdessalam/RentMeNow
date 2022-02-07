@@ -8,6 +8,7 @@ body {
   background-color: rgba(0, 0, 0, 0.822);
 }
 .heder input {
+  
   display: inline-block;
 }
 .heder {
@@ -170,64 +171,13 @@ label:hover {
   margin-top: 0;
   opacity: 1;
 }
-#check1:checked ~ .container .photo-gallery .pic {
-  opacity: 1;
-  transform: scale(1);
-  position: relative;
-  transition: 0.5s;
+.img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-#check2:checked ~ .container .photo-gallery .place {
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  transition: 0.5s;
-}
-#check2:checked ~ .container .photo-gallery .utilitaire,
-#check2:checked ~ .container .photo-gallery .camio,
-#check2:checked ~ .container .photo-gallery .engin_de_chantier {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-
-#check3:checked ~ .container .photo-gallery .camio {
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  transition: 0.5s;
-}
-#check3:checked ~ .container .photo-gallery .utilitaire,
-#check3:checked ~ .container .photo-gallery .place,
-#check3:checked ~ .container .photo-gallery .engin_de_chantier {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-
-#check4:checked ~ .container .photo-gallery .utilitaire {
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  transition: 0.5s;
-}
-#check4:checked ~ .container .photo-gallery .camio,
-#check4:checked ~ .container .photo-gallery .place,
-#check4:checked ~ .container .photo-gallery .engin_de_chantier {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
-}
-
-#check5:checked ~ .container .photo-gallery .engin_de_chantier {
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  transition: 0.5s;
-}
-#check5:checked ~ .container .photo-gallery .camio,
-#check5:checked ~ .container .photo-gallery .place,
-#check5:checked ~ .container .photo-gallery .utilitaire {
-  opacity: 0;
-  transform: scale(0);
-  position: absolute;
+.img img{
+  width: 300px;
+  height: 200px;
 }

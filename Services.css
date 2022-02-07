@@ -98,8 +98,7 @@ h3::before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
- margin: 5px;
+  margin: 148px 5px;
  
   
 }
@@ -118,9 +117,13 @@ h3::before {
  
 }
 #borde{
+  height: 59vh;
   width: 99%;
   border: 1px  solid white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media(max-width:400px){
   .phra_carburant{

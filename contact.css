@@ -9,25 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backwards 8s infinite;
  background-size: cover;
-}
-@keyframes backback{
-33%{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-  url(./image/back/back_login_02.jpg);
-
-}
-66%{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-  url(./image/back/back_login_03.jpg);
-}
-100%{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-  url(./image/back/back-login_04.jpg);
-
-}
-
 }
 .option {
   color: black;
