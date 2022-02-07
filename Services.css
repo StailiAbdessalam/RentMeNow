@@ -170,6 +170,7 @@ display: block;
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
+  margin: 110px 0px;
 
 }
 .vdvd video{
